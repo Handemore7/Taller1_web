@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+@import 'header';

@@ -1,0 +1,43 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: burlywood;
+  height: 80px;
+  position: relative;
+}
+
+.mainHeader__navigation {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.mainHeader__navigation--items {
+  text-decoration: none;
+  color: whitesmoke;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-left: 12%;
+}
+
+.mainHeader__navigation--logo {
+  width: 150px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+/*# sourceMappingURL=main.css.map */
