@@ -1,8 +1,20 @@
+.headerContainer {
+    height: 80px;
+}
+
 .mainHeader {
     display: flex;
     background-color: burlywood;
-    height: 80px;
+    height: 100%;
     position: relative;
+}
+
+.mainHeader__menu {
+    display: none;
+}
+
+.mainHeader__location {
+    display: none;
 }
 
 .mainHeader__navigation {
@@ -25,3 +37,34 @@
     left: 40%;
     top: 50%;
 }
+
+@media (max-width: 650px) {
+    .mainHeader__navigation--items {
+        display: none;
+    }
+
+    .mainHeader__menu {
+        display: flex;
+        position: absolute;
+        width: 9%;
+        margin: 10px 20px;
+    }
+
+    .mainHeader__location {
+        display: flex;
+        position: absolute;  
+        width: 9%;
+        margin: 10px 20px;
+        right: 0px; 
+    }
+
+    .mainHeader {
+        height: 90%;
+    }
+}
+
+/*@media (max-width: 450px) {
+    .mainHeader {
+        height: 80%;
+    }
+}*/
