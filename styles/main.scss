@@ -9,7 +9,10 @@ html, body {
   width: 100%;
 }
 
-
+.footer {
+    background: url(/src/FooterCafeteria.png) ;
+    height: 400px;
+}
 
 @import 'header';
 @import 'slider';

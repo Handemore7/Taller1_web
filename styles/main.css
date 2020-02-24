@@ -10,6 +10,11 @@ html, body {
   width: 100%;
 }
 
+.footer {
+  background: url(/src/FooterCafeteria.png);
+  height: 400px;
+}
+
 .headerContainer {
   height: 80px;
 }
@@ -271,6 +276,7 @@ html, body {
   display: flex;
   width: 100%;
   height: 100%;
+  margin-top: -60px;
 }
 
 .gallery li {
