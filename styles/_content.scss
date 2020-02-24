@@ -1,0 +1,29 @@
+.content {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__primary {
+      width: 100%;
+      height: 300px;
+      background-color: red;
+    }
+    
+    &__secondary {
+      height: 300px;
+      
+        &--right {
+            width: 50%;
+            background-color: green;
+        }
+        
+        &--left {
+            width: 50%;
+            background-color: blue;
+        }
+    }
+}
+  
+  
+  
