@@ -63,3 +63,25 @@
 .content :hover {
   filter: blur(0px);
 }
+
+@media (max-width: $breakpoint-sm) {
+  .content {
+    
+    &__primary {
+      height: 160px;
+
+      &--text {
+        font-size: 20px;
+      }
+    }
+    
+    &__secondary {
+      height: 160px;
+
+      &--text {
+        font-size: 15px;
+        margin: -10px 10px 0px 10px;
+      }
+    }
+  }
+}

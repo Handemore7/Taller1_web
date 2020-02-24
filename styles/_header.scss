@@ -39,7 +39,7 @@
     
 }
 
-@media (max-width: 650px) {
+@media (max-width: $breakpoint-sm) {
     .mainHeader {
         height: 90%;
         

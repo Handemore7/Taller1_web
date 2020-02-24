@@ -10,11 +10,6 @@ html, body {
   width: 100%;
 }
 
-.footer {
-  background: url(/src/FooterCafeteria.png);
-  height: 400px;
-}
-
 .headerContainer {
   height: 80px;
 }
@@ -133,7 +128,7 @@ html, body {
   color: whitesmoke;
   font-family: Saira;
   font-size: 40px;
-  bottom: -45%;
+  bottom: -25%;
   position: relative;
 }
 
@@ -188,6 +183,27 @@ html, body {
   }
   100% {
     margin-left: -300%;
+  }
+}
+
+@media (max-width: 650px) {
+  .slider__image {
+    height: 60%;
+  }
+  .slider__item {
+    width: 100%;
+    height: 10%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(-18.88%, #000000), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, #000000 -18.88%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    top: 60%;
+  }
+  .slider__item--text {
+    color: whitesmoke;
+    font-family: Saira;
+    font-size: 20px;
+    bottom: -15%;
+    position: relative;
   }
 }
 
@@ -265,6 +281,22 @@ html, body {
           filter: blur(0px);
 }
 
+@media (max-width: 650px) {
+  .content__primary {
+    height: 160px;
+  }
+  .content__primary--text {
+    font-size: 20px;
+  }
+  .content__secondary {
+    height: 160px;
+  }
+  .content__secondary--text {
+    font-size: 15px;
+    margin: -10px 10px 0px 10px;
+  }
+}
+
 .gallery {
   width: 100%;
   height: 300px;
@@ -306,5 +338,81 @@ html, body {
   font-size: 20px;
   bottom: -45%;
   position: relative;
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    height: 150px;
+  }
+  .gallery__item {
+    height: 30%;
+  }
+  .gallery__image {
+    height: 100%;
+    border-radius: 10px;
+  }
+  .gallery__image--text {
+    font-size: 15px;
+  }
+}
+
+.footer {
+  background: url(/src/FooterCafeteria.png);
+  height: 400px;
+  width: 100%;
+  margin: 28px 0px 0px 0px;
+}
+
+.footer__information {
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.footer__input {
+  width: 20%;
+  height: 40px;
+}
+
+.footer__navegation {
+  background-color: grey;
+  padding: 10px;
+  width: 100%;
+}
+
+.footer__navegation--links {
+  text-decoration: none;
+  color: whitesmoke;
+  position: relative;
+  width: 20%;
+}
+
+@media (max-width: 650px) {
+  .footer {
+    height: 250px;
+    width: 100%;
+    margin: -15px 0px 0px 0px;
+  }
+  .footer__information {
+    margin: 0px 0px 0px 0px;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  .footer__input {
+    width: 20%;
+    height: 40px;
+  }
+  .footer__navegation {
+    padding: 10px;
+    width: 100%;
+  }
+  .footer__navegation--links {
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
