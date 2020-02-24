@@ -3,27 +3,62 @@
     height: 300px;
     display: flex;
     flex-wrap: wrap;
+    display: none;
+    
 
     &__primary {
       width: 100%;
       height: 300px;
-      background-color: red;
+      background-image: url(/src/Content1.png);
+      filter: blur(2px);
+
+        &--box {
+          width: 100%;
+          height: 20%;
+          background: linear-gradient(90deg, #000000 -18.88%, rgba(0, 0, 0, 0) 100%);
+          position: relative;
+          top: 80%;
+        }
+
+        &--text {
+          margin: auto 10px;
+          color: whitesmoke;
+          font-family: Saira;
+          font-size: 45px;
+        }
     }
     
     &__secondary {
       height: 300px;
+      filter: blur(2px);
       
         &--right {
-            width: 50%;
-            background-color: green;
+          width: 50%;
+          background-image: url(/src/Content3.png);
         }
         
         &--left {
-            width: 50%;
-            background-color: blue;
+          width: 50%;
+          background-image: url(/src/Content2.png);
+        }
+
+        &--box {
+          padding: 10px;
+          width: 100%;
+          height: 20%;
+          background: linear-gradient(90deg, #000000 -18.88%, rgba(0, 0, 0, 0) 100%);
+          position: relative;
+          top: 80%;
+        }
+
+        &--text {
+          margin: auto 10px;
+          color: whitesmoke;
+          font-family: Saira;
+          font-size: 35px;
         }
     }
 }
-  
-  
-  
+.content :hover {
+  filter: blur(0px);
+}
