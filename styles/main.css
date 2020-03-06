@@ -10,6 +10,43 @@ html, body {
   width: 100%;
 }
 
+.interaction {
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.interaction__card {
+  width: 30%;
+  height: 70%;
+  background-color: whitesmoke;
+  display: inline-block;
+}
+
+.interaction__cardHidden {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: rosybrown;
+}
+
+.interaction__text {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 48px;
+}
+
+.animate {
+  opacity: 0;
+  width: 0px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 .headerContainer {
   height: 80px;
 }
