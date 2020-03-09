@@ -1,6 +1,6 @@
 .slider {
     width: 100%;
-    height: 550px;
+    height: 560px;
     overflow: hidden;
     //height: 750px;
 
@@ -41,14 +41,14 @@
         font-family: Saira;
         font-size: 40px;
         bottom: -0%;
+        padding-left: 30px;
         position: relative;
+        font-family: 'Courgette', cursive;
       }
     }
   }
   
-
-  
-  /*@keyframes change{
+  @keyframes change{
     0% { margin-left: 0; }
     20% { margin-left: 0; }
   
@@ -60,7 +60,7 @@
   
     75% { margin-left: -300%; }
     100% { margin-left: -300%; }
-  }*/
+  }
 
   @media (max-width: $breakpoint-sm) {
     .slider {
