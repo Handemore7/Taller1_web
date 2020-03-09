@@ -10,43 +10,6 @@ html, body {
   width: 100%;
 }
 
-.interaction {
-  height: 800px;
-  width: 100%;
-  background-color: black;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-}
-
-.interaction__card {
-  width: 30%;
-  height: 70%;
-  background-color: whitesmoke;
-  display: inline-block;
-}
-
-.interaction__cardHidden {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background-color: rosybrown;
-}
-
-.interaction__text {
-  color: whitesmoke;
-  text-align: center;
-  font-size: 48px;
-}
-
-.animate {
-  opacity: 0;
-  width: 0px;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
 .headerContainer {
   height: 80px;
 }
@@ -68,6 +31,18 @@ html, body {
   display: none;
 }
 
+.mainHeader__backgroundLogo {
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 67.19%, rgba(196, 196, 196, 0) 100%);
+  opacity: 100;
+  border-radius: 50px;
+  width: 15%;
+  height: 220%;
+  z-index: 1;
+  left: 40%;
+  position: absolute;
+  top: 50%;
+}
+
 .mainHeader__navigation {
   width: 80%;
   margin: auto;
@@ -81,10 +56,9 @@ html, body {
 }
 
 .mainHeader__navigation--logo {
-  width: 150px;
+  width: 100%;
   position: absolute;
-  left: 40%;
-  top: 50%;
+  opacity: 100;
 }
 
 .mainHeader__navigation--mobile {
@@ -141,15 +115,19 @@ html, body {
 }*/
 .slider {
   width: 100%;
+  height: 550px;
   overflow: hidden;
 }
 
 .slider ul {
   padding: 0px;
+  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 400%;
+  position: relative;
+  height: 100%;
   -webkit-animation: change 20s infinite;
           animation: change 20s infinite;
   -webkit-animation-direction: alternate;
@@ -161,21 +139,21 @@ html, body {
 .slider li {
   list-style: none;
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .slider__image {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .slider__item {
   width: 100%;
-  height: 10%;
   background: -webkit-gradient(linear, left top, right top, color-stop(-18.88%, #000000), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(90deg, #000000 -18.88%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
-  top: 70%;
+  bottom: 0px;
 }
 
 .slider__item--text {
@@ -462,5 +440,42 @@ html, body {
     display: flex;
     width: 100%;
   }
+}
+
+.interaction {
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.interaction__card {
+  width: 30%;
+  height: 70%;
+  background-color: whitesmoke;
+  display: inline-block;
+}
+
+.interaction__cardHidden {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: rosybrown;
+}
+
+.interaction__text {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 48px;
+}
+
+.animate {
+  opacity: 0;
+  width: 0px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 /*# sourceMappingURL=main.css.map */
