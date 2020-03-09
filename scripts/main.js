@@ -24,21 +24,18 @@ var cardHiddenLeft = document.querySelector('.interaction__cardHidden--left');
 var cardHiddenCenter = document.querySelector('.interaction__cardHidden--center');
 var cardHiddenRight = document.querySelector('.interaction__cardHidden--right');
 
-var handleClickAnyCard = function (event) {
+var handleClickCardLeft = function (event) {
     cardHiddenLeft.classList.remove('interaction__cardHidden');
 }
 
-var removeAnimation = function (event) {
-    cardHiddenLeft.style.width='0px';
-    cardHiddenLeft.style.padding='0px';
-    cardHiddenLeft.style.opacity='0';
+var handleClickCardCenter = function (event) {
+    cardHiddenCenter.classList.remove('interaction__cardHidden');
 }
 
-var removeAnimation2 = function (event) {
-    cardHiddenLeft.classList.add('animate');
-    cardHiddenLeft.classList.remove('interaction__cardHidden');
-
+var handleClickCardRight = function (event) {
+    cardHiddenRight.classList.remove('interaction__cardHidden');
 }
 
-//cardHiddenLeft.addEventListener('click', handleClickAnyCard);
-cardHiddenLeft.addEventListener('click', removeAnimation2);
+cardHiddenLeft.addEventListener('click', handleClickCardLeft);
+cardHiddenCenter.addEventListener('click', handleClickCardCenter);
+cardHiddenRight.addEventListener('click', handleClickCardRight);

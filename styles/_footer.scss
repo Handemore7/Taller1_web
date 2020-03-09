@@ -2,10 +2,12 @@
     background: url(/src/FooterCafeteria.png) ;
     height: 400px;
     width: 100%;
+    position: absolute;
 
     &__information {
         color: whitesmoke;
         font-size: 50px;
+        position: relative;
     }
 
     &__input {
@@ -17,6 +19,8 @@
         background-color: grey;
         padding: 10px;
         width: 100%;
+        top: 40%;
+        position: relative;
 
         &--links {
             text-decoration: none;
@@ -52,6 +56,8 @@
         &__navegation {
             padding: 10px;
             width: 100%;
+            position: absolute;
+            top: 200px;
     
             &--links {
                 text-decoration: none;

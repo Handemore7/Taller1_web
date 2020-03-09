@@ -374,11 +374,13 @@ html, body {
   background: url(/src/FooterCafeteria.png);
   height: 400px;
   width: 100%;
+  position: absolute;
 }
 
 .footer__information {
   color: whitesmoke;
   font-size: 50px;
+  position: relative;
 }
 
 .footer__input {
@@ -390,6 +392,8 @@ html, body {
   background-color: grey;
   padding: 10px;
   width: 100%;
+  top: 40%;
+  position: relative;
 }
 
 .footer__navegation--links {
@@ -422,6 +426,8 @@ html, body {
   .footer__navegation {
     padding: 10px;
     width: 100%;
+    position: absolute;
+    top: 200px;
   }
   .footer__navegation--links {
     text-decoration: none;
