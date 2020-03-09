@@ -113,6 +113,16 @@ html, body {
     margin: 10px 20px;
     right: 0px;
   }
+  .mainHeader__navigation {
+    display: none;
+  }
+  .mainHeader__navigation--items {
+    font-size: 14px;
+  }
+  .mainHeader__navigation--logo {
+    width: 30%;
+    left: 35%;
+  }
   .mainHeader__navigation--mobile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -121,6 +131,7 @@ html, body {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    z-index: 2;
   }
 }
 
@@ -238,8 +249,11 @@ html, body {
 }
 
 @media (max-width: 650px) {
+  .slider {
+    height: 200px;
+  }
   .slider__image {
-    height: 60%;
+    height: 100%;
   }
   .slider__item {
     width: 100%;
@@ -247,13 +261,19 @@ html, body {
     background: -webkit-gradient(linear, left top, right top, color-stop(-18.88%, #000000), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(90deg, #000000 -18.88%, rgba(0, 0, 0, 0) 100%);
     position: relative;
-    top: 60%;
+    top: 90%;
   }
   .slider__item--text {
     color: whitesmoke;
-    font-family: Saira;
-    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    font-size: 12px;
     bottom: -15%;
+    position: relative;
+  }
+  .slider li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
     position: relative;
   }
 }
@@ -290,6 +310,7 @@ html, body {
   color: whitesmoke;
   font-family: Saira;
   font-size: 45px;
+  font-family: 'Courgette', cursive;
 }
 
 .content__secondary {
@@ -325,6 +346,7 @@ html, body {
   color: whitesmoke;
   font-family: Saira;
   font-size: 35px;
+  font-family: 'Courgette', cursive;
 }
 
 .content :hover {
@@ -334,16 +356,20 @@ html, body {
 
 @media (max-width: 650px) {
   .content__primary {
-    height: 160px;
+    height: 150px;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   .content__primary--text {
-    font-size: 20px;
+    font-size: 13px;
   }
   .content__secondary {
-    height: 160px;
+    height: 150px;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   .content__secondary--text {
-    font-size: 15px;
+    font-size: 12px;
     margin: -10px 10px 0px 10px;
   }
 }
@@ -351,6 +377,7 @@ html, body {
 .gallery {
   width: 100%;
   height: 350px;
+  overflow-y: hidden;
 }
 
 .gallery__content {
@@ -360,11 +387,12 @@ html, body {
   width: 100%;
   height: 90%;
   margin: 0px;
+  padding: 0px;
 }
 
 .gallery__title {
   font-size: 30px;
-  margin: 20px 0px 0px 40px;
+  margin: 10px 0px 0px 40px;
 }
 
 .gallery li {
@@ -395,21 +423,37 @@ html, body {
   font-size: 20px;
   bottom: -45%;
   position: relative;
+  font-family: 'Handlee', cursive;
 }
 
 @media (max-width: 650px) {
   .gallery {
     height: 150px;
   }
+  .gallery__content {
+    width: 100%;
+    height: 80%;
+    margin: 0px;
+  }
   .gallery__item {
-    height: 30%;
+    height: 20%;
+    width: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(-15.88%, #000000), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(0deg, #000000 -15.88%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 80%;
+  }
+  .gallery__title {
+    font-size: 16px;
+    margin: 10px 0px 0px 20px;
   }
   .gallery__image {
     height: 100%;
     border-radius: 10px;
   }
   .gallery__image--text {
-    font-size: 15px;
+    font-size: 12px;
+    margin: -5px 10px;
   }
 }
 
@@ -430,6 +474,7 @@ html, body {
   -webkit-box-shadow: 4px 3px 5px 0 rgba(0, 0, 0, 0.2) inset;
           box-shadow: 4px 3px 5px 0 rgba(0, 0, 0, 0.2) inset;
   text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.66);
+  font-size: 16px;
 }
 
 .footer__filter {
@@ -451,6 +496,8 @@ html, body {
 .footer__input {
   width: 20%;
   height: 40px;
+  font-family: 'Handlee', cursive;
+  color: black;
 }
 
 .footer__navegation {
@@ -487,43 +534,54 @@ html, body {
 
 @media (max-width: 650px) {
   .footer {
-    height: 250px;
+    height: 200px;
     width: 100%;
   }
   .footer__information {
     margin: 0px 0px 0px 0px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     position: relative;
     top: 10px;
   }
   .footer__input {
-    width: 20%;
+    width: 50%;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto;
   }
   .footer__navegation {
-    padding: 10px;
+    padding: 0px;
     width: 100%;
     position: absolute;
     top: 200px;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    margin-top: -30px;
+    display: inline-block;
   }
   .footer__navegation--links {
     text-decoration: none;
     text-align: center;
+    font-size: 12px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0px;
     width: 100%;
+    padding: 10px 0px 10px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .interaction {
   height: 600px;
   width: 100%;
-  background-color: black;
+  background-image: url(/src/Tabla_De_Madera.png);
+  background-size: cover;
   -ms-flex-line-pack: justify;
       align-content: space-between;
   -webkit-box-pack: justify;
@@ -531,10 +589,50 @@ html, body {
           justify-content: space-between;
 }
 
-.interaction__card {
+.interaction__card--left {
   width: 30%;
-  height: 80%;
+  height: 70%;
   background-color: whitesmoke;
+  display: inline-block;
+  position: relative;
+  margin: 0px auto 0px 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 0;
+}
+
+.interaction__card--center {
+  width: 30%;
+  height: 70%;
+  background-image: url(/src/IceCream.png);
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  margin: 0px auto 0px 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.interaction__card--right {
+  width: 30%;
+  height: 70%;
+  background-image: url(/src/IceCream.png);
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  margin: 0px auto 0px 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.interaction__card--left {
+  width: 30%;
+  height: 70%;
+  background-image: url(/src/HeladoSad.png);
+  background-size: cover;
   display: inline-block;
   position: relative;
   margin: 0px auto 0px 2%;
@@ -547,24 +645,95 @@ html, body {
   width: 100%;
   height: 100%;
   display: inline-block;
+  position: absolute;
   background-color: rosybrown;
+  z-index: 1;
 }
 
 .interaction__text {
-  color: whitesmoke;
+  color: #473939;
   text-align: center;
   font-size: 48px;
   font-family: 'Handlee', cursive;
   margin: 0px 0px 10px 0px;
   padding-top: 20px;
+  z-index: 1;
 }
 
-.animate {
-  opacity: 0;
-  width: 0px;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+.interaction__cardContent--center {
+  z-index: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-30%, #000000), color-stop(144%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 -30%, rgba(0, 0, 0, 0) 144%);
+  bottom: 0px;
+}
+
+.interaction__cardContent--right {
+  z-index: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-30%, #000000), color-stop(144%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 -30%, rgba(0, 0, 0, 0) 144%);
+  bottom: 0px;
+  display: block;
+}
+
+.interaction__cardContent--left {
+  z-index: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-30%, #000000), color-stop(144%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 -30%, rgba(0, 0, 0, 0) 144%);
+  bottom: 0px;
+  display: block;
+}
+
+.cardContent--center {
+  width: 100%;
+  color: blanchedalmond;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0px;
+  z-index: 0;
+}
+
+.cardContent--right {
+  width: 100%;
+  color: blanchedalmond;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0px;
+  z-index: 0;
+}
+
+.cardContent--left {
+  width: 100%;
+  color: blanchedalmond;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0px;
+  z-index: 0;
+}
+
+@media (max-width: 650px) {
+  .interaction {
+    height: 250px;
+  }
+  .interaction__card {
+    height: 60%;
+  }
+  .interaction__text {
+    font-size: 15px;
+  }
+  .cardContent--left {
+    font-size: 12px;
+  }
+  .cardContent--center {
+    font-size: 12px;
+  }
+  .cardContent--right {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

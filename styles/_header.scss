@@ -86,11 +86,24 @@
             right: 0px; 
         }
 
+
         &__navigation {
+            
+            display: none;
+
+            &--items {
+                font-size: 14px;
+            }
+
+            &--logo {
+                width: 30%;
+                left: 35%;
+            }
 
             &--mobile {
                 flex-direction: column;
                 display: flex !important;
+                z-index: 2;
             }
 
         }
