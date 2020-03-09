@@ -1,7 +1,7 @@
 .interaction {
     height: 600px;
     width: 100%;
-    background-image: url('./src/Tabla_De_Madera.png');
+    background-image: url("../src/Tabla_De_Madera.png");
     background-size: cover;
     align-content: space-between;
     justify-content: space-between;
@@ -20,7 +20,7 @@
         &--center {
             width: 30%;
             height: 70%;
-            background-image: url('./src/IceCream.png');
+            background-image: url("../src/IceCream.png");
             background-size: cover;
             display: inline-block;
             position: relative;
@@ -30,7 +30,7 @@
         &--right {
             width: 30%;
             height: 70%;
-            background-image: url('./src/IceCream.png');
+            background-image: url("../src/IceCream.png");
             background-size: cover;
             display: inline-block;
             position: relative;
@@ -40,7 +40,7 @@
         &--left {
             width: 30%;
             height: 70%;
-            background-image: url('./src/HeladoSad.png');
+            background-image: url("../src/HeladoSad.png");
             background-size: cover;
             display: inline-block;
             position: relative;
