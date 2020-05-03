@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affogatto</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="headerContainer">
+      <div class="mainHeader">
+          <img class="mainHeader__menu" src="./src/menuPNG.png" alt="">
+          <div class="mainHeader__backgroundLogo"></div>
+              <img class="mainHeader__navigation--logo" src="./src/logoPNG.png" alt="Logo de la cafeteria">        
+          <img class="mainHeader__location" src="./src/placeholderPNG.png" alt=""> 
+          <div class="mainHeader__navigation">
+              <a class="mainHeader__navigation--items" href="/quienes_somos">Quienes somos</a>
+              <a class="mainHeader__navigation--items" href="/tienda">Productos</a>
+              <a class="mainHeader__navigation--items" href="/contacto">Contactenos</a>
+              <a class="mainHeader__navigation--items" href="/donde_ubicarnos">Donde ubicarnos</a>
+          </div>
+      </div>
+  </div>
+  </header>
+  <div class="slider">
+    <ul>
+        <li>
+            <div class="slider__item">
+                <p class="slider__item--text">Conoce los sabores de helado que tenemos para ti</p>
+            </div>
+            <img class="slider__image" src="./src/Heladeria1.jpg" alt="">
+        </li>
+        <li>
+            <div class="slider__item">
+                <p class="slider__item--text">Tus sabores preferidos en la presentación que mas te guste</p>
+            </div>
+            <img class="slider__image" src="./src/Heladeria4.jpg" alt="">
+        </li>
+        <li>
+            <div class="slider__item">
+                <p class="slider__item--text">Conoce nuestras promociones</p>
+            </div>
+            <img class="slider__image" src="./src/Heladeria3.jpg" alt="">
+        </li>
+        <li>
+            <div class="slider__item">
+                <p class="slider__item--text">Tus sabores preferidos en la presentación que mas te guste</p>
+            </div>
+            <img class="slider__image" src="./src/Heladeria4.jpg" alt="">
+        </li>
+    </ul>
+  </div>
+  <main>
+    <section class="interaction">
+        <p class="interaction__text">¡Abre una de las siguientes cartas y podras ganar recompensas!</p>
+        <div class="interaction__card--left">
+            <div class="interaction__cardHidden interaction__cardHidden--left"></div>
+            <div class="interaction__cardContent--left">
+                <p class="cardContent--left">Intentalo de nuevo en 24 horas para abrir una nueva carta</p>
+            </div>
+        </div>
+        <div class="interaction__card--center">
+            <div class="interaction__cardHidden interaction__cardHidden--center"></div>
+            <div class="interaction__cardContent--center">
+                <p class="cardContent--center">Compra 2 helados y recibe un topping extra en cada uno</p>
+            </div>
+        </div>
+        <div class="interaction__card--right">
+            <div class="interaction__cardHidden interaction__cardHidden--right"></div>
+            <div class="interaction__cardContent--right">
+                <p class="cardContent--right">¡Reclama un topping totalmente gratis!</p>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="content__primary">
+            <div class="content__primary--box">
+                <p class="content__primary--text">Productos saludables para cualquier momento del dia</p>
+            </div>
+        </div>
+        <div class="content__secondary content__secondary--left">
+            <div class="content__secondary--box">
+                <p class="content__secondary--text">Conoce nuestra sección de cafeteria</p>
+            </div>
+        </div>
+        <div class="content__secondary content__secondary--right">
+            <div class="content__secondary--box">
+                <p class="content__secondary--text">Conoce nuestra sección de heladeria</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <p class="gallery__title">Galeria de imagenes</p>
+        <ul class="gallery__content">
+            <li> <!-- class="gallery__jghkhkjyg" style="padding: 0px" -->
+                <div class="gallery__item">
+                    <p class="gallery__image--text">Helados</p>
+                </div>
+                <img class="gallery__image" src="./src/Galeria1.png" alt="">
+            </li>
+            <li>
+                <div class="gallery__item">
+                    <p class="gallery__image--text">Capuccino</p>
+                </div>
+                <img class="gallery__image" src="./src/Galeria2.png" alt="">
+            </li>
+            <li>
+                <div class="gallery__item">
+                    <p class="gallery__image--text">Malteadas</p>
+                </div>
+                <img class="gallery__image" src="./src/Galeria3.png" alt="">
+            </li>
+            <li>
+                <div class="gallery__item">
+                    <p class="gallery__image--text">Affogatto</p>
+                </div>
+                <img class="gallery__image" src="./src/Galeria4.jpg" alt="">
+            </li>
+            <li>
+                <div class="gallery__item">
+                    <p class="gallery__image--text">Ensalada de frutas</p>
+                </div>
+                <img class="gallery__image" src="./src/Galeria5.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__filter">
+    </div>
+        <div class="footer__information">
+            <p>Entérate de <strong>promociones</strong> y <strong>nuevos productos</strong> suscribiendote a nuestro <strong>newsletter: <input type="text" placeholder="Escribe tu correo aquí" class="footer__input"></strong></p>
+        </div>
+        <nav class="footer__navegation">
+            <a class="footer__navegation--links" href="#">Escríbenos</a>
+            <a class="footer__navegation--links" href="#">Productos</a>
+            <a class="footer__navegation--links" href="#">Mapa del sitio</a>
+            <a class="footer__navegation--links" href="#">Términos y condiciones</a>
+            <a class="footer__navegation--links" href="#">Política de privacidad</a>
+        </nav>
+  </footer>
+
+  <script src="/scripts/client.js"></script>
+  <script src="/scripts/main.js"></script>
+
+</body>
+</html>
